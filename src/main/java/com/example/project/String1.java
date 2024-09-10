@@ -31,10 +31,10 @@ public class String1 {
     }
     public boolean equal(String1 s) {
 
-        for(int i = 0; i < s.length(); i++)
+        for(int i = 0; i <= size; i++)
 		if(str[i]==s);
 	    return true;
-else
+
 	    return false;
     }
     public void reverse() {
@@ -44,7 +44,7 @@ else
 while(left < right){
 char b=str[left];
 	str[left]=str[right];
-	str[right]=str[left];
+	str[right]=b;
 right--;
 	left++;
 
