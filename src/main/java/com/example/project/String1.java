@@ -32,7 +32,7 @@ public class String1 {
     public boolean equal(String1 s) {
 
         for(int i = 0; i <= size; i++)
-		if(str[i]==s);
+		if(str[i]==s)
 	    return true;
 
 	    return false;
