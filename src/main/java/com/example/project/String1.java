@@ -31,24 +31,24 @@ public class String1 {
     }
     public boolean equal(String1 s) {
 
-        for(int i = 0; i <= size; i++)
-		if(str[i]==s)
-	    return true;
-
-	    return false;
+        for (int i = 0; i <= size; i++) {
+            if (str[i] != s.getChar(i)) {
+                return false;
+            }
+        }
+        return true;
     }
+
+    // Reverse the characters in the string
     public void reverse() {
-
-	      int left = 0;
-    int right = size ;
-while(left < right){
-char b=str[left];
-	str[left]=str[right];
-	str[right]=b;
-right--;
-	left++;
-
-	
+        int left = 0;
+        int right = size;
+        while (left < right) {
+            char temp = str[left];
+            str[left] = str[right];
+            str[right] = temp;
+            left++;
+            right--;
+        }
     }
-}
 }
