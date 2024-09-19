@@ -31,15 +31,20 @@ public class String1 {
     }
     public boolean equal(String1 s) {
 
-        for (int i = 0; i < size; i++) {
-            if (str[i] != s.getChar(i)) {
-                return false;
-            }
-        }
-        return true;
+       if (this.size != s.size) {
+        return false; 
     }
 
-    // Reverse the characters in the string
+    for (int i = 0; i <= this.size; i++) {
+        if (this.str[i] != s.getChar(i)) {
+            return false; 
+        }
+    }
+
+    return true; 
+}
+
+  
     public void reverse() {
         int left = 0;
         int right = size;
