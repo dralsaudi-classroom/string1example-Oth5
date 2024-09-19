@@ -31,7 +31,7 @@ public class String1 {
     }
     public boolean equal(String1 s) {
 
-        for (int i = 0; i <= size; i++) {
+        for (int i = 0; i < size; i++) {
             if (str[i] != s.getChar(i)) {
                 return false;
             }
